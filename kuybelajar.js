@@ -13,6 +13,7 @@ if (pacar == null) {
 } else {
   pacar = "udah punya";
 }
+
 // switch (pacar) {
 //   case 1:
 //     pacar = "punya 1 aja";
