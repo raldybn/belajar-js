@@ -10,6 +10,34 @@ namaSaya.innerHTML = "<marquee>ini P<marque/>"; //text berjalan karna menggunaka
 const namaKamu = document.createElement("b");
 namaKamu.innerText = "<marquee>ini nama kamu<marquee/>";
 
-body.append(h1);
 body.append(namaSaya);
 body.append(namaKamu);
+
+document.tittle = "raldy belo";
+const btn1 = document.getElementById("btn1"); //untuk memanggil ID
+const btn2 = document.querySelector(".btn2"); //untuk memanggil class
+
+const defaultText = "klik saya";
+btn1.textContent = defaultText;
+
+// styling
+btn1.style.border = "none";
+btn1.style.padding = "8px";
+btn1.style.fontSize = "24px";
+btn2.style.fontSize = "50rem";
+// console.log(btn2);
+
+function clickButton() {
+  btn1.style.background = "aqua";
+  const newText = document.createElement("p");
+  newText.textContent = "hallo bang";
+  body.append(newText);
+}
+
+function ubahText() {
+  btn1.textContent = "hallo";
+}
+
+function oriText() {
+  btn1.textContent = defaultText;
+}
